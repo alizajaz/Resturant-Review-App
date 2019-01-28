@@ -21,6 +21,9 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
+    <!-- The <ul> tag (breadcrumb) in restaurant.html needs an appropriate aria label.
+The <ul> tag (breadcrumb) in restaurant.html should be surrounded by a <nav> tag or it should have an aria role specifying that the breadcrumb is for navigation. -->
+    <nav class="breadcrumb-container" arial-label="breadcrumb">
     <ul id="breadcrumb"  tabindex="1">
       <li><a href="/">Home</a></li>
     </ul>
@@ -29,16 +32,23 @@
   </header>
   <!-- End header -->
 
+
+<!--
+The map needs an appropriate aria role to explain that it is an external application in the website.
+In restaurant.html, the title of the application, the restaurant's name and the title of reviews have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title,
+ h2 for the restaurant's name and h3 for the title of reviews. -->
+
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container" aria-role="map area">
-      <div id="map"></div>
+    <section id ="map-container">
+    <div id="map" aria-hidden="true" aria-role="application">>/div>
+
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
+      <h2 id="restaurant-name"></h2>
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>

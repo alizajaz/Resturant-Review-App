@@ -23,7 +23,8 @@
 
   <main aria-label="maincontent" id="maincontent">
     <section tabindex="-1" id="map-container">
-      <div aria-label="resturants map"  id="map"></div>
+<!-- The map needs an appropriate aria role to explain that it is an external application in the website. -->
+      <div id="map" aria-hidden="true" aria-role="application"></div>
     </section>
     <section >
       <div  class="filter-options">

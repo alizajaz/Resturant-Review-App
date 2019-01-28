@@ -79,6 +79,11 @@ fetchRestaurantFromURL = (callback) => {
 /**
  * Create restaurant HTML and add it to the webpage
  */
+
+ //   Provide the alt attribute for each image in the application.
+ // Please consider making the alt value descriptive enough stating it is an image of the restaurant. This is very important for people using screen readers.
+ // For example Photo extract from Emily’s Restaurant
+
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
@@ -89,6 +94,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = `image from ${restaurant.name}'s restaurant`;
+  image.title = restaurant.name;
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -124,9 +131,13 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 /**
  * Create all reviews HTML and add them to the webpage.
  */
+// In restaurant.html, the title of the application, the restaurant's name and the title of reviews have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title,
+//  h2 for the restaurant's name and h3 for the title of reviews.
+
+
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.innerHTML = 'Reviews';
   container.appendChild(title);
 
