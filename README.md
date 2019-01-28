@@ -31,3 +31,44 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future-proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
+
+# My contribution to this project
+Step 1.
+```sh
+Get a MapBox API key, Get the map on the screen
+If you do not already have a MapBox account, go ahead and create one
+MapBox API is free to use (no need to provide any payment information). I create one account and create a token and plug it into 2 different file main.js in mapboxToken and resturant_info.js(mapboxToken)
+```
+Step 2.
+```sh
+Convert the provided site to use a responsive design. 
+I have use flex, media queries and change width to 100% for responsive websites. You can see the changes in style.css.
+```
+
+Step 3.
+```sh
+Implement accessibility features in the site HTML
+At first i tried to give tab a number starting from 0, 1, 2. Then i got error while check its accessibility. Therefore i put -1 as a tab index and used focus. also i get error in image file since it didn'y have alt file . therefore, i created image.alt= restaurant.name; in main.js and give value in image alt in resturants.json file.
+```
+
+Step 4.
+```sh
+a.Add a ServiceWorker script 
+for registration (main.js)
+// Registration take place here
+if ('serviceWorker' in navigator) {
+   window.addEventListener('load', ()=> {
+    navigator.serviceWorker
+    .register('../sw_catched_pages.js')
+      // Registration was successful
+    .then(reg => console.log('ServicWorker registration successful: Registered'))
+      // registration failed :(
+    .catch(err => console.log(`ServiceWorker registration failed: ${err}`));
+  });
+}
+b.Then i created 2 file. There are two ways to get file. sw_catched_pages.js file is the one you can choose the important file and install and fetch whereas sw_cached_site.js helps to clone all file and fetch. Now, a user will be accessible when the user is offline. 
+
+```
+
+
+
