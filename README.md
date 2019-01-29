@@ -69,7 +69,7 @@ if ('serviceWorker' in navigator) {
 b.Then i created 2 file. There are two ways to get file. sw_catched_pages.js file is the one you can choose the important file and install and fetch whereas sw_cached_site.js helps to clone all file and fetch. Now, a user will be accessible when the user is offline. 
 
 ```
-#Some correction while submitting my project
+# Some correction while submitting my project
 main.js
 a.In index.html, the title of the application and the restaurant's name have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title and h2 for the restaurant's name.
 b.Descriptive labels should be defined for each of the VIEW DETAILS links on the home page of the application to avoid screen readers for pronouncing the word view details for all the images. For example, an aria-label of View details of the restaurant Emily could be set for the restaurant Emily.
