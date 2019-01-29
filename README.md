@@ -72,22 +72,27 @@ b.Then i created 2 file. There are two ways to get file. sw_catched_pages.js fil
 # Some correction while submitting my project
 
 ## main.js
-a.In index.html, the title of the application and the restaurant's name have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title and h2 for the restaurant's name.
-b.Descriptive labels should be defined for each of the VIEW DETAILS links on the home page of the application to avoid screen readers for pronouncing the word view details for all the images. For example, an aria-label of View details of the restaurant Emily could be set for the restaurant Emily.
+1. In index.html, the title of the application and the restaurant's name have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title and h2 for the restaurant's name.
+
+ * Descriptive labels should be defined for each of the VIEW DETAILS links on the home page of the application to avoid screen readers for pronouncing the word view details for all the images. For example, an aria-label of View details of the restaurant Emily could be set for the restaurant Emily.
 
 ## resturant.html
-a.The <ul> tag (breadcrumb) in restaurant.html needs an appropriate aria label.
+2. The <ul> tag (breadcrumb) in restaurant.html needs an appropriate aria label.
 The <ul> tag (breadcrumb) in restaurant.html should be surrounded by a <nav> tag or it should have an aria role specifying that the breadcrumb is for navigation.
-b.The map needs an appropriate aria role to explain that it is an external application in the website.
-c. In restaurant.html, the title of the application, the restaurant's name and the title of reviews have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title, h2 for the restaurant's name and h3 for the title of reviews.
+   
+ * The map needs an appropriate aria role to explain that it is an external application in the website.
+   
+ * In restaurant.html, the title of the application, the restaurant's name and the title of reviews have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title, h2 for the restaurant's name and h3 for the title of reviews.
    
 ## index.html
- a. The map needs an appropriate aria role to explain that it is an external application in the website.
+ 3. The map needs an appropriate aria role to explain that it is an external application in the website.
  
  ## resturant_info.js
- a. Provide the alt attribute for each image in the application.
-Please consider making the alt value descriptive enough stating it is an image of the restaurant. This is very important for people using screen readers.
-For example Photo extract from Emily’s Restaurant
-b. In restaurant.html, the title of the application, the restaurant's name and the title of reviews have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title, h2 for the restaurant's name and h3 for the title of reviews.
+ 4. Provide the alt attribute for each image in the application.
+* Please consider making the alt value descriptive enough stating it is an image of the restaurant. This is very important for people using screen readers.
+
+* For example Photo extract from Emily’s Restaurant
+
+* In restaurant.html, the title of the application, the restaurant's name and the title of reviews have different levels of importance, so they should have different levels of heading style. E.g. h1 for the application title, h2 for the restaurant's name and h3 for the title of reviews.
 
 
